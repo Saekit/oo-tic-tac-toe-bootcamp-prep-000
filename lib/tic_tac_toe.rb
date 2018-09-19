@@ -3,6 +3,6 @@ def TicTacToe
     @board = board
   end
   
-  def board = Array.new(9, " ")
+  board = Array.new(9, " ")
   
 end

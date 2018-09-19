@@ -2,7 +2,6 @@ class TicTacToe
   def initialize
     @board = [" "," "," "," "," "," "," "," "," "]
   end
-end
 
 WIN_COMBINATIONS = [
   [0,1,2],  # row1
@@ -140,4 +139,7 @@ def play(board)
     elsif draw?(board)
       puts "Cat's Game!"
     end
+end
+
+
 end

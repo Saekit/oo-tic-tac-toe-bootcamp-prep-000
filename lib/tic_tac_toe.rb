@@ -88,8 +88,8 @@ end
 
 
 
-def full?(board)
-  if board.detect {|space| space == " " || space == nil}
+def full?
+  if @board.detect {|space| space == " " || space == nil}
     return false
   else
     return true
@@ -98,8 +98,8 @@ end
 
 
 
-def draw?(board)
-  if !(won?(board)) && full?(board)
+def draw?
+  if !(won?) && full?
     return true
   else
     false
@@ -108,8 +108,8 @@ end
 
 
 
-def over?(board)
-  if full?(board) || draw?(board) || won?(board)
+def over?
+  if full? || draw? || won?
     return true
   else
     return false

@@ -28,8 +28,8 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def player_move(board, index, current_player)
-  board[index] = current_player
+def move(index, current_player = "X")
+  @board[index] = current_player
 end
 
 def position_taken?(board, index)
@@ -48,7 +48,7 @@ def turn(board)
   index = input_to_index(input)
   if valid_move?(board, index)
     player_token = current_player(board)
-    player_move(board, index, player_token)
+    move(board, index, player_token)
     display_board(board)
   else
     turn(board)

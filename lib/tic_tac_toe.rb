@@ -3,5 +3,10 @@ class TicTacToe
     @board = board
   end
   
-  board = Array.new(9, " ")
+  def board
+    @board
+  end
+  def board=(board)
+    @board = board
+  end
 end
